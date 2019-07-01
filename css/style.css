@@ -1,0 +1,1270 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+@font-face {
+    src: url(../fonts/NotoSansKR-Black.otf);
+    font-family: noto-black;
+}
+
+@font-face {
+    src: url(../fonts/NotoSansKR-Bold.otf);
+    font-family: noto-bold;
+}
+
+@font-face {
+    src: url(../fonts/NotoSansKR-Medium.otf);
+    font-family: noto-medium;
+}
+
+@font-face {
+    src: url(../fonts/NotoSansKR-Regular.otf);
+    font-family: noto-regular;
+}
+
+@font-face {
+    src: url(../fonts/NotoSansKR-Light.otf);
+    font-family: noto-light;
+}
+
+@font-face {
+    src: url(../fonts/NotoSansKR-Thin.otf);
+    font-family: noto-thin;
+}
+
+@font-face {
+    src: url(../fonts/Pe-icon-7-stroke.ttf);
+    font-family: pe-icon;
+}
+
+h2 {
+    font-family: noto-bold;
+    font-size: 35px;
+    color: #000;
+    padding-bottom: 20px;
+}
+
+h5 {
+    font-family: noto-bold;
+    font-size: 20px;
+    color: #000;
+    line-height: 27px;
+}
+
+/* ================== Header Part CSS Start =================== */
+
+header {
+    padding: 40px 0;
+    position: relative;
+}
+
+header p {
+    font-family: noto-bold;
+    font-size: 24px;
+    color: #000000;
+}
+
+.header-right {
+    position: absolute;
+    top: 36px;
+    right: 30px;
+}
+
+.header-right ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.header-right ul li:first-child a {
+    font-family: noto-bold;
+    font-size: 24px;
+    padding: 12px 55px;
+    border-radius: 30px;
+    background: #D8D8D8;
+    color: #000;
+}
+
+header .slick-dots {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+header .slick-dots li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 10px;
+    background: transparent;
+    text-align: center;
+}
+
+header .slick-dots li button {
+    font-size: 2px;
+    color: transparent;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    border: 0;
+    background: #ababab;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+header .slick-dots li.slick-active button {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #FF733C;
+}
+
+/* ================== Header Part CSS End =================== */
+
+/* ================== Navbar Part CSS Start =================== */
+
+.navbar {
+    padding: 0 40px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.sticky.navbar {
+    position:fixed;
+    top:0;
+    left:0;
+    background:#A7A7A7;
+    box-shadow: 0px 5px 10px 0px #ddd;
+    z-index: 99999;
+}
+
+.navbar .navbar-nav .nav-item {
+    padding: 20px 0;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link {
+    font-family: noto-bold;
+    font-size: 20px;
+    color: #fff;
+    margin: 0 10px;
+    border-bottom: 2px solid transparent;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    border-bottom: 2px solid #FF733C;
+    color:#FF733C;
+}
+
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+	border-bottom: 2px solid #FF733C;
+    color:#FF733C;
+}
+
+.nav-right ul li {
+    display: inline-block;
+    margin: 0 12px;
+    position: relative;
+}
+
+.nav-right ul .nav-right-first-li a {
+    font-family: noto-bold;
+    font-size: 15px;
+    color: #fff;
+    background: #FF733C;
+    padding: 10px 30px;
+    border-radius: 30px;
+}
+
+.nav-right ul li a {
+    font-family: noto-bold;
+    font-size: 15px;
+    color: #fff;
+}
+
+.nav-right ul li ul {
+    position: absolute;
+    top: 50px;
+    left: -11px;
+    width: 56px;
+    background: #fff;
+    padding: 5px 0;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px 0px #999;
+    visibility: hidden;
+    opacity: 0;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.nav-right ul li ul li {
+    margin-bottom: 2px;
+}
+
+.nav-right ul li ul li a {
+    color: #000;
+    display: block;
+}
+
+.nav-right ul li:hover>ul {
+    visibility: visible;
+    opacity: 1;
+    top: 30px;
+}
+
+
+
+/* ============== Mega Menu ============== */
+
+.static,
+.navbar .navbar-nav li.static {
+    position: static;
+}
+
+.navbar .navbar-nav li .megamenu {
+    position: absolute;
+    top: 115%;
+    width: 100% !important;
+    left: 0;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    visibility: hidden;
+    opacity: 0;
+    text-align: left;
+    box-shadow: 0px 5px 10px 0px #ddd;
+}
+
+.navbar .navbar-nav .nav-item:hover .megamenu {
+    top: 100%;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    visibility: visible;
+    opacity: 1;
+    z-index: 99;
+    background-color: #fff;
+}
+
+.navbar .navbar-nav li .megamenu li.megamenu-item {
+    width: 20%;
+    padding: 25px 30px;
+    float: left;
+    margin-right: 0;
+}
+
+.megamenu-item ul li {
+    margin:15px 0;
+}
+
+.megamenu-item ul li a {
+    font-family: noto-regular;
+    font-size:20px;
+    color:#000;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.megamenu-item ul li a:hover  {
+    color:#FF733C;
+    padding-left:5px;
+}
+
+.megamenu-imgbox {
+    display:flex;
+}
+
+.mega-img {
+    margin:40px 15px;
+}
+
+.mega-img h6 {
+    font-family:noto-regular;
+    font-size:20px;
+    color:#000;
+    padding-top:10px;
+}
+
+/* ============== Mega Menu ============== */
+
+
+/* mobile menu css start */
+.mobile-bar {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	margin-top: 5px;
+	font-size: 24px;
+	cursor: pointer;
+	color: #1f2d4c;
+	display: none;
+}
+
+.header-area.shirnkk .mobile-bar {
+	color: #fff;
+}
+
+.sidebar.active {
+	transform: translateX(0);
+	opacity: 1;
+	visibility: visible;
+}
+
+.sidebar {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: var(--secondary-color);
+	right: 0;
+	top: 0;
+	z-index: 700;
+	transform: translateX(300px);
+	transition: 0.5s;
+	opacity: 0;
+	visibility: hidden;
+	padding: 20px;
+	padding-top: 15px;
+}
+
+.off-canvas-overlay {
+	background: #000;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 5;
+	opacity: 0;
+	cursor: pointer;
+	visibility: hidden;
+	transition: 0.5s;
+}
+
+.off-canvas-overlay.active {
+	opacity: 0.5;
+	visibility: visible;
+}
+
+
+/* ================== Navbar Part CSS End =================== */
+
+/* ================== Banner Part CSS Start =================== */
+
+#banner {
+    background: linear-gradient(#959595, #C0C0C0);
+    padding-top: 230px;
+    padding-bottom: 200px;
+    position: relative;
+}
+
+.banner-slide-item h1 {
+    font-family: noto-bold;
+    font-size: 35px;
+    color: #fff;
+    line-height: 50px;
+}
+
+#banner .slick-dots {
+    position: absolute;
+    top: 50%;
+    right: -80px;
+    transform: translateY(-50%);
+}
+
+#banner .slick-dots li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 23px 0;
+    background: transparent;
+    text-align: center;
+}
+
+#banner .slick-dots li button {
+    font-size: 2px;
+    color: transparent;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    border: 0;
+    background: #fff;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+#banner .slick-dots li.slick-active button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #FF733C;
+}
+
+/* ================== Banner Part CSS End =================== */
+
+/* ================== Second Part CSS Start =================== */
+
+#second {
+    padding-top: 80px;
+    padding-bottom: 73px;
+}
+
+.second-head-item {
+    background: #E6E6E6;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.second-head-item h5 {
+    padding-top: 30px;
+}
+
+/* ================== Second Part CSS End =================== */
+
+/* ================== Blog Slider Part CSS Start =================== */
+
+#blog-slide {
+    padding-bottom: 80px;
+}
+
+.blog-slide-left {
+    position: relative;
+}
+
+.blog-slide-icon {
+    width: 62px;
+    height: 30px;
+    position: absolute;
+    top: 11px;
+    right: 0;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.blog-slide-icon:before {
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ddd;
+    content: '';
+}
+
+.blog-slide-icon i {
+    width: 27px;
+    height: 30px;
+    line-height: 30px;
+    font-family: pe-icon;
+    font-size: 28px;
+    color: #777;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.blog-slide-item h3 {
+    font-family: noto-bold;
+    font-size: 33px;
+    color: #000;
+    line-height: 50px;
+    padding-top: 15px;
+}
+
+.b-slide-right-item {
+    background: #E6E6E6;
+    margin-bottom: 30px;
+}
+
+.b-slide-right-item h5 {
+    padding-top: 20px;
+}
+
+.blog-slide .slick-dots {
+    position: absolute;
+    bottom: -147px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.blog-slide .slick-dots li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 10px;
+    background: transparent;
+    text-align: center;
+}
+
+.blog-slide .slick-dots li button {
+    font-size: 2px;
+    color: transparent;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    border: 0;
+    background: #ababab;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.blog-slide .slick-dots li.slick-active button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #FF733C;
+}
+
+.blog-slide-bottom {
+    margin-top: 50px;
+}
+
+.blog-slide-bottom ul {
+    margin-top: 20px;
+}
+
+.blog-slide-bottom ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.blog-slide-bottom ul li:last-child {
+    margin-right: 0;
+}
+
+.blog-slide-bottom ul li a {
+    font-family: noto-bold;
+    font-size: 24px;
+    color: #000;
+    padding: 12px 63px;
+    border-radius: 30px;
+    background: #D8D8D8;
+}
+
+/* ================== Blog Slider Part CSS End =================== */
+
+/* ================== Jumpbotron Part CSS Start =================== */
+
+#jumpbotron {
+    background: url(../images/jumpbotron-bg.png) no-repeat center;
+    background-size: cover;
+    padding: 80px;
+}
+
+.jumpbotron-item h5 {
+    padding-top: 15px;
+}
+
+/* ================== Jumpbotron Part CSS End =================== */
+
+/* ================== Jumpbotron2 Part CSS Start =================== */
+
+#jumpbotron2 {
+    padding: 80px;
+}
+
+.jumpbotron-item h5 {
+    padding-top: 15px;
+}
+
+.jumpbotron-item p {
+    font-family: noto-regular;
+    font-size: 15px;
+    color: #666;
+    text-align: right;
+    padding-top: 10px;
+}
+
+/* ================== Jumpbotron2 Part CSS End =================== */
+
+/* ================== Blog Part CSS Start =================== */
+
+.blog-next p {
+    font-family: noto-regular;
+    font-size: 15px;
+    color: #666;
+    text-align: right;
+    padding-top: 10px;
+}
+
+.blog-next .blog-slide-right {
+    background: #E6E6E6;
+}
+
+.blog-next-right-head {
+    padding: 20px 15px;
+}
+
+.blog-next .blog-slide-right h6 {
+    font-family: noto-regular;
+    font-size: 18px;
+    color: #000;
+}
+
+.blog-next .blog-slide-right a {
+    font-family: noto-bold;
+    font-size: 15px;
+    color: #FF733C;
+}
+
+.blog-next .blog-slide-right a i {
+    font-family: pe-icon;
+    font-size: 18px;
+    color: #FF733C;
+    font-weight: 900;
+    padding-right: 5px;
+    vertical-align: middle;
+}
+
+.blog-next .b-slide-right-item h5 {
+    padding-top: 0px;
+}
+
+.blog-next-last {
+    margin-bottom: 15px !important;
+}
+
+/* ================== Blog Part CSS End =================== */
+
+/* ================== Blog2 Part CSS End =================== */
+
+.blog-next2 {
+    margin-top: -70px;
+    padding-bottom: 50px !important;
+}
+
+.blog-next2 .b-slide-right-item {
+    background: none;
+}
+
+.blog-next2 .b-slide-right-item h5 {
+    font-family: noto-ragular;
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+.blog-next2 .b-slide-right-item .fajil-p {
+    width: 100%;
+    text-align: right;
+}
+
+.blog-next2 p {
+    font-family: noto-regular;
+    font-size: 15px;
+    color: #666;
+    padding-top: 10px;
+}
+
+/* ================== Blog2 Part CSS End =================== */
+
+/* ================== Thin Content Banner Part CSS Start =================== */
+
+#thin-content-banner {
+    background: url(../images/thin-content-banner.jpg) no-repeat center;
+    background-size: cover;
+    padding: 80px 0;
+}
+
+#thin-content-banner h2 {
+    color: #fff;
+    padding-top: 13px;
+    padding-bottom: 10px;
+}
+
+.thin-user-info p {
+    font-family: noto-regular;
+    font-size: 18px;
+    color: #fff;
+}
+
+.thin-user-bio p {
+    font-family: noto-bold;
+    font-size: 18px;
+    color: #fff;
+}
+
+/* ================== Thin Content Banner Part CSS End =================== */
+
+/* ================== Filter Part CSS Start =================== */
+
+.filter-head {
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+#filter {
+    background: url(../images/jumpbotron-bg.png) no-repeat center;
+    background-size: cover;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.filter-icon i {
+    font-size: 30px;
+    padding: 0 20px;
+    padding-top: 3px;
+}
+
+.nav-tabs .nav-link {
+    border: 0;
+    background: transparent;
+    border-radius: 30px;
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-right: 10px;
+    font-family: noto-bold;
+    font-size: 15px;
+    color: #000;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.nav-tabs .nav-link:hover {
+    background: #D8D8D8;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    background-color: #D8D8D8;
+}
+
+.nav-tabs {
+    border: 0;
+    margin-bottom: 30px;
+}
+
+.filter-imgbox {
+    position: relative;
+}
+
+.filter-img-corner {
+    width: 90px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 5px;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.filter-blue {
+    background: #2875FF;
+    box-shadow: 0px 0px 5px 0px rgba(40, 115, 255, 0.3);
+}
+
+.filter-yellow {
+    background: #FFA728;
+    box-shadow: 0px 0px 5px 0px rgba(255, 165, 40, 0.3);
+}
+
+.filter-orange {
+    background: #FF6633;
+    box-shadow: 0px 0px 5px 0px rgba(255, 102, 51, 0.3);
+}
+
+
+
+.filter-img-corner p {
+    color: #fff;
+    text-align: center;
+    padding-top: 0;
+}
+
+/* ================== Filter Part CSS End =================== */
+
+/* ================== BLog Details Part CSS Start =================== */
+
+#blog-details {
+    margin-bottom:40px;
+}
+
+.blog-details-head {
+    border-bottom: 1px solid #ddd;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.bd-headup {
+    padding-bottom: 25px;
+}
+
+.bd-headup span {
+    font-family: noto-bold;
+    font-size: 18px;
+    color: #FF733C;
+    padding-bottom: 5px;
+    display: block;
+}
+
+.bd-headbottom h6 {
+    font-family: noto-bold;
+    font-size: 18px;
+    color: #000;
+    padding-top: 20px;
+}
+
+.bd-headbottom p {
+    font-family: noto-regular;
+    font-size: 12px;
+    color: #000;
+}
+
+.bd-headbottom ul {
+    text-align: right;
+}
+
+.bd-headbottom ul li {
+    display: inline-block;
+    text-align: center;
+    margin: 0 3px;
+    margin-top: 23px;
+}
+
+.bd-headbottom ul li a i {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    background: #9E9E9E;
+    font-size: 22px;
+    color: #fff;
+}
+
+.blog-video {
+    position: relative;
+    margin: 50px 0;
+}
+
+.blog-video i {
+    font-size: 80px;
+    color: #BCBCBC;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.blog-details-desc h5 {
+    padding-bottom: 10px;
+}
+
+.blog-details-desc h5 i {
+    color: #FF733C;
+}
+
+.blog-details-desc p {
+    font-family: noto-regular;
+    font-size: 18px;
+    color: #000;
+    line-height: 30px;
+    padding-bottom: 25px;
+}
+
+.inner-details {
+    background: #F3F3F3;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.inner-details h6 {
+    font-family: noto-bold;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.inner-details p {
+    font-family: noto-regular;
+    font-size: 18px;
+    padding-bottom: 0;
+}
+
+.inner-details2 {
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.inner-details2 a {
+    font-family: noto-bold;
+    font-size: 18px;
+    color: #000;
+    padding: 10px 45px;
+    border-radius: 30px;
+    background: #D8D8D8;
+}
+
+.inner-details2 a i {
+    font-size: 16px;
+    padding-right: 5px;
+}
+
+.inner-ul {
+    margin-top: 15px;
+    margin-bottom: 45px;
+}
+
+.inner-ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.inner-ul li a {
+    font-family: noto-bold;
+    font-size: 18px;
+    color: #000;
+    padding: 10px 25px;
+    border-radius: 30px;
+    background: #D8D8D8;
+}
+
+.inner-details ul {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.inner-details ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.inner-details ul li a {
+    font-family: noto-bold;
+    font-size: 18px;
+    color: #000;
+    padding: 10px 35px;
+    border-radius: 30px;
+    background: #D8D8D8;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.inner-details ul li:first-child a:hover {
+    background: #D8D8D8;
+    color: #000;
+}
+
+.inner-details ul li:first-child a:hover {
+    background: #D8D8D8;
+    color: #000;
+}
+
+.inner-details ul li:first-child a:hover {
+    background: #D8D8D8;
+    color: #000;
+}
+
+.inner-details ul li:first-child a:hover {
+    background: #D8D8D8;
+    color: #000;
+}
+
+.inner-details ul li:first-child a {
+    background: #FF733C;
+    color: #fff;
+}
+
+.inner-details ul li a:hover {
+    background: #FF733C;
+    color: #fff;
+}
+
+.inner-details ul li a i {
+    font-size: 16px;
+    padding-right: 5px;
+}
+
+.blog-social {
+    text-align: center;
+}
+
+.blog-social li {
+    display: inline-block;
+    text-align: center;
+    margin: 0 3px;
+    margin-top: 23px;
+}
+
+.blog-social li a i {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 22px;
+    color: #fff;
+}
+
+.facebook {
+    background:#3b5999;
+}
+
+.twitter {
+    background:#55acee;
+}
+
+.tumblr {
+    background:#FFD436;
+}
+
+.print {
+    background:#9E9E9E;
+}
+
+.blog-social li span {
+    font-family:noto-regular;
+    font-size:18px;
+    color:#000;
+    padding-left:10px;
+}
+
+
+/* ================== BLog Details Part CSS End =================== */
+
+/* ================== BLog List Part CSS Start =================== */
+
+#blog-list {
+    background:#F3F3F3;
+    padding:60px 0;
+}
+
+#blog-list h2 {
+    padding-bottom:50px;
+}
+
+.blog-list-item {
+    padding-left:100px;
+    box-sizing:border-box;
+    position:relative;
+    padding-bottom:30px;
+}
+
+.blog-list-item:before {
+    position:absolute;
+    content:'';
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    background:#FF733C;
+    top:0;
+    left:0;
+    z-index: 99;
+}
+.blog-list-after {
+    position: relative;
+}
+
+.blog-list-after:after {
+    position:absolute;
+    content:'';
+    width:1px;
+    height:100%;
+    background:#ddd;
+    top:0;
+    left:5px;
+}
+
+.blog-list-item h3 {
+    font-family:noto-bold;
+    font-size:28px;
+    color:#000;
+    line-height:40px;
+    padding-right:150px;
+}
+
+.blog-list-item p {
+    font-family:noto-regular;
+    font-size:18px;
+    color:#000;
+    line-height:30px;
+    padding-top:20px;
+}
+
+.blog-list-item .fajil-p {
+	position: absolute;
+	top: 1px;
+	right: 0;
+	width: 150px;
+	text-align: right;
+}
+
+.blog-list-item .fajil-p p {
+    padding:0;
+}
+
+.blog-list-btn {
+    margin-left:100px;
+}
+
+.blog-list-btn a {
+    background:#D8D8D8;
+    font-family:noto-regular;
+    font-size:20px;
+    color:#000;
+    display:block;
+    padding:20px 0;
+    text-align:center;
+    border-radius:5px;
+}
+
+/* ================== BLog List Part CSS End =================== */
+
+/* ================== BLog List2 Part CSS End =================== */
+
+#blog-list2 {
+    padding-top:10px;
+    padding-bottom:40px;
+}
+
+#blog-list2 .blog-list-item {
+    padding-top: 35px;
+    padding-bottom:50px;
+}
+
+#blog-list2 .blog-list-item .fajil-p {
+	position: absolute;
+	top: 0;
+	left: 40px;
+	width: 150px;
+	text-align: right;
+}
+
+#blog-list2 .blog-list-item h3 {
+    padding-right:0;
+}
+
+/* ================== BLog List2 Part CSS End =================== */
+
+/* ================== Footer Part CSS Start =================== */
+
+footer {
+    background:#555555;
+    padding: 80px 0;
+}
+
+.footer-left ul {
+    margin:0 10px;
+    margin-top:20px;
+}
+
+.footer-left ul li {
+	display: inline-block;
+	text-align: center;
+	margin: 8px 8px;
+}
+
+.footer-left ul li a i {
+    width:40px;
+    height:40px;
+    line-height:38px;
+    border: 1px solid #ddd;
+    border-radius:50%;
+    font-size:20px;
+    color:#ddd;
+}
+
+.footer-right ul {
+    margin-top:10px;
+    margin-bottom:30px;
+}
+
+.footer-right ul li {
+	display: inline-block;
+	margin-right:20px;
+}
+
+.footer-right ul li a {
+    font-family:noto-bold;
+    font-size:12px;
+    color:#fff;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.footer-right ul li a:hover {
+    color:#FF733C;
+}
+
+.footer-right p {
+    font-family:noto-regular;
+    font-size:12px;
+    color:#fff;
+}
+
+.cpryt {
+    padding-top:30px;
+}
+
+/* ================== Footer Part CSS End =================== */

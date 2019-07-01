@@ -1,0 +1,20 @@
+@media(max-width:575.98px) {
+    .header-right ul li:first-child a {
+        display: none;
+    }
+
+    header p {
+        font-size:19px;
+        padding: 0 30px;
+    }
+
+    .header-right {
+        top:50%;
+        transform:translateY(-50%);
+        right: 0px;
+    }
+
+    .header-right img {
+        width:30px;
+    }
+}
